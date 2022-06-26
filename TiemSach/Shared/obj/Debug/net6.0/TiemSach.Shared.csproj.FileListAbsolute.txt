@@ -1,0 +1,12 @@
+D:\TiemSach\TiemSach\Shared\bin\Debug\net6.0\TiemSach.Shared.deps.json
+D:\TiemSach\TiemSach\Shared\bin\Debug\net6.0\TiemSach.Shared.dll
+D:\TiemSach\TiemSach\Shared\bin\Debug\net6.0\TiemSach.Shared.pdb
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.csproj.AssemblyReference.cache
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.AssemblyInfoInputs.cache
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.AssemblyInfo.cs
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.csproj.CoreCompileInputs.cache
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.dll
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\refint\TiemSach.Shared.dll
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\TiemSach.Shared.pdb
+D:\TiemSach\TiemSach\Shared\obj\Debug\net6.0\ref\TiemSach.Shared.dll

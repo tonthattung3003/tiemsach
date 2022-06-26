@@ -1,0 +1,31 @@
+﻿@if (Sachs.Any()) {
+<ItemList Items="@Sachs">
+    <Header>
+        <h1 class="">Danh sách sản phẩm</h1>
+    </Header>
+    <RowTemplate Context="tuple">
+        <SachItem Sach="@tuple.sach"
+            ButtonClass="btn btn-danger"
+            ButtonTitle="Xóa"
+            Selected="@(() =>
+            Selected.InvokeAsync(tuple.pos))" />
+    </RowTemplate>
+    <Footer>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><hr /></div>
+            <div class="col"> </div>
+            <div class="col"> </div>
+        </div>
+        <div class="row">
+            <div class="col"> Total:</div>
+            <div class="col text-right font-weight-bold">
+                @($"{TotalPrice:0.00}")
+            </div>
+            <div class="col"> </div>
+            <div class="col"> </div>
+            <div class="col"> </div>
+        </div>
+    </Footer>
+</ItemList>
+}

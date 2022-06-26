@@ -1,0 +1,20 @@
+﻿<div class="row">
+    <div class="col">
+        @Sach.Name
+    </div>
+    <div class="col text-right">
+        @($"{Sach.Price:0.00}")
+    </div>
+    <div class="col"></div>
+    <div class="col">
+        <img src="@LoaisachImage(Sach.Loaisach)"
+        alt="@Sach.Loaisach" />
+    </div>
+    <div class="col">
+        <button class="@ButtonClass"
+            @onclick="@(() => Selected.InvokeAsync(Sach))">
+            @ButtonTitle
+        </button>
+    </div>
+</div>
+

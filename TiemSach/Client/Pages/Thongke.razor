@@ -1,0 +1,33 @@
+﻿@page "/thongke"
+
+<SfGrid DataSource="@Orders" AllowPaging="true" AllowSorting="true" AllowFiltering="true" AllowGrouping="true">
+ <GridPageSettings PageSize="5"></GridPageSettings>
+   <GridColumns>
+     <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+     <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Tên khách hàng" Width="150"></GridColumn>
+     <GridColumn Field=@nameof(Order.OrderDate) HeaderText="Ngày mua hàng" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+     <GridColumn Field=@nameof(Order.TenSach) HeaderText="Tên sách" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+   </GridColumns>
+</SfGrid>
+
+@code{
+    public List<Order> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = Enumerable.Range(1, 75).Select(x => new Order()
+        {
+            OrderID = 1000 + x,
+            CustomerID = (new string[] { "Minh Ái", "Cẩm Xuyên", "Bá Lộc", "Vĩnh My", "Hoài Linh" })[new Random().Next(5)],
+            TenSach = (new string[] { "Sách ngôn tình", "Sách tài chính", "Sách hư cấu" })[new Random().Next(3)],
+            OrderDate = DateTime.Now.AddDays(-x),
+        }).ToList();
+    }
+
+    public class Order {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public string TenSach { get; set; }
+    }
+}
